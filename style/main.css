@@ -1,0 +1,210 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+ 
+
+header .container{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/la-casa-de-papel1.jpg');
+
+    height: 400px;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color:white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+    position: relative;
+}
+
+
+/* elementos modal */
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
+.modal-conteudo{
+    width: 900px;
+    height: 400px;
+    transition: opacity 6s ease;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.modal-cabecalho{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.modal-botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color:white;
+
+    padding: 15px 30px;
+    height: 50px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.modal-botao:hover{
+    background-color: white;
+    color:black;
+}
+
+.modal-botao i{
+    margin-right: 8px;
+}
+
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align:justify;
+}
+
+.modal-body h4{
+    font-weight: bold;
+}
+
+.fade{
+    opacity: .05;  
+}
+
+.container-principal{
+    transition: opacity .5s ease-in-out;
+}
+
+.iframe{
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
